@@ -55,12 +55,17 @@
 			
 			<h2 id="feedback">Make your Guess!</h2>
 
-			<form>
+			<div id="guessing_UI">
 				<input type="text" name="userGuess" id="userGuess" class="text" maxlength="3" autocomplete="off" placeholder="Enter your Guess" required/>
       			<input type="submit" id="guessButton" class="button" name="submit" value="Guess"/>
-			</form>
+			</div>
 			
-      		<p>Guess #<span id="count">0</span>!</p>
+			<div id="victory_message">
+				<p>You Won!</p>
+				<p>It took you <span id="victory_guesses"></span> guesses.</p>
+			</div>
+			
+      		<p id="guess_count">Guess #<span id="count">0</span>!</p>
 			
 			<ul id="guessList" class="guessBox clearfix">
 

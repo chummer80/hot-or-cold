@@ -227,7 +227,7 @@ h2 {
 	padding-bottom: 0.5em;
 }
 
-#count {
+#count, #victory_guesses {
 	color: #f39c12;
 	font-weight: 700;
 	font-size: 1.5em;
@@ -307,7 +307,11 @@ ul.guessBox {
 	border-bottom-right-radius: 4px;
 	color: #fff;
 	overflow: auto;
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
 }
+
 ul.guessBox li {
 	display: inline;
 	background-color: #1a4e95;
@@ -318,4 +322,11 @@ ul.guessBox li {
 	width: 95%;
 	margin: 0.2em;
 	color: #fff;
+}
+
+#victory_message {
+	color: white;
+	display: none;
+	top: 2em;
+	position: relative;
 }
